@@ -1,0 +1,24 @@
+$main: #404242;
+$white: #ffffff;
+$active-color: #58A9A5;
+$yellow: #FEC62D;
+
+body{
+  font-family: generalFont;
+  color: $main;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 142px 0 166px;
+}
+
+h1{
+  font-family: generalFontBold;
+  font-size: 70px;
+  line-height: 105px;
+  margin: 50px 0;
+}

@@ -1,0 +1,19 @@
+.btn{
+  min-width: 270px;
+  display: inline-block;
+  height: 80px;
+  background: $active-color;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  &:hover{
+    cursor: pointer;
+  }
+  &-decoration{
+    border-radius: 20px 20px 20px 0px;
+    font-family: generalFontBold;
+    font-size: 25px;
+    line-height: 80px;
+  }
+}
