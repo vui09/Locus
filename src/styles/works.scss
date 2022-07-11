@@ -1,0 +1,54 @@
+.works{
+
+  &__video{
+    display: flex;
+    justify-content: flex-end;
+    background: url("../images/Small-Table.jpg") no-repeat top left $bg-block;
+    border-radius: 10px;
+    min-height: 350px;
+  }
+
+  &__text{
+    width: 20%;
+    padding: 50px 6.5% 0;
+    color: $second-color;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+  }
+  &__link{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $second-color;
+    font-family: generalFontBold;
+    text-decoration: none;
+    background-image: linear-gradient($second-color, $second-color);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    &:hover{
+      background-size: 100% 2px;
+    }
+  }
+
+  &__link-decoration{
+    width: 128px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    span{
+      background: url("../images/link.svg") no-repeat center center $white;
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+}

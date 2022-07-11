@@ -1,7 +1,9 @@
 $main: #404242;
+$second-color: #486958;
 $white: #ffffff;
 $active-color: #58A9A5;
 $yellow: #FEC62D;
+$bg-block: #CCF0E6;
 
 body{
   font-family: generalFont;
@@ -21,4 +23,22 @@ h1{
   font-size: 70px;
   line-height: 105px;
   margin: 50px 0;
+}
+
+h2{
+  margin: 20px 0;
+}
+
+.title{
+  font-family: generalFontBold;
+  font-size: 70px;
+  line-height: 105px;
+  text-align: center;
+}
+.subtitle{
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 520px;
 }
