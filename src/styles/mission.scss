@@ -1,0 +1,26 @@
+.mission{
+  margin-top: 150px;
+
+  &__container{
+    display: flex;
+  }
+
+  &__img{
+    width: calc((100% / 12)* 4);
+  }
+
+  &__text{
+    width: calc((100% / 12)* 6);
+    font-size: 30px;
+    line-height: 45px;
+    padding-left: 10%;
+
+    p{
+      color: $second-color;
+    }
+  }
+
+  h3{
+    max-width: 470px;
+  }
+}

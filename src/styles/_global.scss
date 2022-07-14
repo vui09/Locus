@@ -3,6 +3,7 @@ $second-color: #486958;
 $white: #ffffff;
 $active-color: #58A9A5;
 $yellow: #FEC62D;
+$black: #1C2323;
 $bg-block: #CCF0E6;
 
 body{
@@ -18,6 +19,10 @@ body{
   padding: 0 142px 0 166px;
 }
 
+h1, h2, h3, .title{
+  color: $black;
+}
+
 h1{
   font-family: generalFontBold;
   font-size: 70px;
@@ -27,6 +32,12 @@ h1{
 
 h2{
   margin: 20px 0;
+}
+
+h3{
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0 0 50px;
 }
 
 .title{
@@ -41,4 +52,8 @@ h2{
   text-align: center;
   margin: 0 auto 50px;
   width: 520px;
+}
+
+img{
+  max-width: 100%;
 }
