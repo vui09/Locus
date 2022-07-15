@@ -1,0 +1,53 @@
+.feedback{
+
+  &__wrapper{
+    background: $bg-block;
+    display: flex;
+  }
+
+  &__img{
+    width: 39%;
+    max-height: 700px;
+  }
+
+  &__info{
+    width: 61%;
+    padding: 50px 0;
+  }
+
+  &__advantages{
+    color: $active-color;
+    display: flex;
+    padding: 0 11%;
+
+    &__item{
+      //font-family: generalPoppinsMedium;
+      font-size: 25px;
+
+      span{
+        font-size: 70px;
+        line-height: 105px;
+        font-family: generalFontBold;
+        display: block;
+      }
+    }
+    &__item:not(:last-child){
+      margin-right: 117px;
+    }
+  }
+
+  &__text{
+    color: $second-color;
+    font-size: 25px;
+    font-family: generalPoppinsMediumItalic;
+    line-height: 38px;
+    font-style: italic;
+    background: url("../images/icon.svg") no-repeat left 75px top 65px;
+    padding: 123px 11% 0;
+  }
+  &__who{
+    color: $active-color;
+    margin-top: 50px;
+  }
+
+}
