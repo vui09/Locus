@@ -1,0 +1,160 @@
+.contact{
+  margin: 240px 0 150px;
+
+  &__container{
+    display: flex;
+  }
+
+  &__left{
+    width: 25%;
+    padding-right: 5%;
+  }
+
+  .title{
+    text-align: left;
+  }
+
+  .subtitle{
+    color: $second-color;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .subtitle-decor{
+    &:before{
+      bottom: -37px;
+      left: 0;
+    }
+    &:after{
+      bottom: -52px;
+      left: 0;
+    }
+  }
+
+  &__right{
+    width: 64%;
+    border: 1px solid $second-color;
+    padding: 3%;
+  }
+
+  &__wrap{
+    position:relative;
+    margin-bottom:45px;
+  }
+
+  &__input{
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+
+    &:focus{
+      outline:none;
+    }
+
+    &:focus ~ label,
+    &:valid ~ label    {
+      top:-20px;
+      font-size:14px;
+      color: $active-color;
+    }
+
+    &:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+
+    &:focus ~ .bar:before,
+    &:focus ~ .bar:after {
+      width:50%;
+    }
+
+  }
+
+  &__label{
+    color: $second-color;
+    font-size: 25px;
+    line-height: 38px;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top: -5px;
+    transition:0.2s ease all;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar{
+    position:relative;
+    display:block;
+    width: 100%;
+  }
+  .bar:before,
+  .bar:after{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background: $second-color;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+  }
+
+  .bar:before {
+    left:50%;
+  }
+
+  .bar:after {
+    right:50%;
+  }
+
+  .highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  @-webkit-keyframes inputHighlighter {
+    from{
+      background:#5264AE;
+    }
+    to{
+      width:0;
+      background:transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from{
+      background:#5264AE;
+    }
+    to{
+      width:0;
+      background:transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from{
+      background:#5264AE;
+    }
+    to{
+      width:0;
+      background:transparent;
+    }
+  }
+
+  &__wrap__submit{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}

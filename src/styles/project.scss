@@ -1,29 +1,6 @@
 .project{
   margin-top: 70px;
 
-  .subtitle{
-    position: relative;
-
-    &:before{
-      content: " ";
-      position: absolute;
-      bottom: -50px;
-      left: calc((100% - 135px) / 2);
-      width: 135px;
-      height: 5px;
-      background: $active-color;
-    }
-    &:after{
-      content: " ";
-      position: absolute;
-      bottom: -66px;
-      left: calc((100% - 135px) / 2);
-      width: 135px;
-      height: 5px;
-      background: $active-color;
-    }
-  }
-
   &__list{
     display: flex;
     justify-content: space-between;
